@@ -1,0 +1,101 @@
+/* Your Custom code here */
+.wrapper {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/*
+Header Styles
+*/
+.header {
+  background-image: url("img/back-desktop.png");
+  background-size: auto;
+  background-position-x: 31.25%;
+  min-height: 853px;
+}
+.header-top {
+  height: 112px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header-top__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+}
+.logo-header {
+  width: 17%;
+  padding-left: 10px;
+}
+nav {
+  widows: 83%;
+}
+.nav-items {
+  display: flex;
+  padding-right: 10px;
+}
+.nav-item {
+  padding-left: 45px;
+}
+.nav-link {
+  color: white;
+  font-size: 18px;
+}
+/*
+Footer Styles
+*/
+footer {
+  height: 200px;
+  width: 100%;
+}
+.footer-top {
+  display: flex;
+}
+.logo-footer {
+  padding-left: 10px;
+  width: 17%;
+}
+.social {
+  width: 70.2%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 22.917%;
+  padding-right: 22.917%;
+}
+.social-block {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+}
+.social-svg {
+  width: 23px;
+  height: 21px;
+}
+.developer {
+  width: 55.33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.developer > p {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #283645;
+}
+.html-svg {
+  width: 30px;
+  height: 35px;
+}
+/* Стили для Пагинации */
+/* Single Gallery Page */
+/* Styles for Cooments */
+/* Add Comment Form */
+/* Events Styles */
+/*
+* About Styles
+*/
