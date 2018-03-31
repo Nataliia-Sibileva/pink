@@ -603,7 +603,6 @@ Header Styles
   background-image: url("img/back-desktop.png");
   background-size: auto;
   background-position-x: 31.25%;
-  min-height: 853px;
 }
 .header-top {
   height: 112px;
@@ -626,10 +625,10 @@ nav {
   display: flex;
   padding-right: 10px;
 }
-.nav-item {
+.nav-items li {
   padding-left: 45px;
 }
-.nav-link {
+.nav-items li a {
   color: white;
   font-size: 18px;
 }
@@ -637,8 +636,10 @@ nav {
 Footer Styles
 */
 footer {
-  height: 200px;
+  height: 197px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .footer-top {
   display: flex;
@@ -683,7 +684,71 @@ footer {
   width: 30px;
   height: 35px;
 }
-/* Стили для Пагинации */
+/* Стили для slide */
+.home-slide {
+  background-image: url("img/back-desktop.png");
+  background-size: auto;
+  background-position-x: 31.25%;
+  background-position-y: -110px;
+  min-height: 745px;
+  color: white;
+}
+.home-slide h1,
+.home-slide a {
+  color: white;
+}
+.home-slide h1 {
+  font-size: 50px;
+  width: 240px;
+  margin: 0 auto;
+  text-transform: unset;
+}
+.home-slide a {
+  width: 300px;
+  height: 55px;
+  display: flex;
+  border: 2px solid;
+  border-radius: 50px;
+  font-size: 21px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.slide {
+  display: flex;
+}
+.slide-text {
+  width: 380px;
+  padding-left: 10px;
+  padding-top: 100px;
+  text-align: center;
+}
+.slide-image {
+  width: 580px;
+  height: 745px;
+}
+.slide-image img {
+  padding-top: 100px;
+}
+.operating-system {
+  width: 50px;
+  height: 50px;
+  padding-right: 30px;
+}
+.systems {
+  width: 265px;
+  padding-left: 44px;
+}
+.apple {
+  width: 60px;
+  height: 60px;
+}
+.slide-p {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 50px;
+}
 /* Single Gallery Page */
 /* Styles for Cooments */
 /* Add Comment Form */
@@ -691,3 +756,15 @@ footer {
 /*
 * About Styles
 */
+@media (min-width: 660px) {
+  .wrapper {
+    width: 87.5%;
+    margin: 0 auto;
+  }
+  /*
+  Header Styles
+  */
+  .header {
+    min-width: 320px;
+  }
+}

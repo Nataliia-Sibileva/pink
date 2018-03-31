@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
 </head>
@@ -18,23 +19,23 @@
             <div class="header-top">
                 <div class="wrapper header-top__flex">
                     <div class="logo-header">
-                        <img src="<?php echo ale_get_option('sitelogo'); ?>"/>
+                        <picture>
+                            <source srcset="<?php echo ale_get_option('moblogo'); ?>" media="(max-width: 660px)">
+                            <img src="<?php echo ale_get_option('sitelogo'); ?>"/>
+                        </picture>
                     </div>
                     <nav class="nav">
-                        <ul class="nav-items">
-                            <li class="nav-item">
-                                <a class="nav-link">Главная</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Фотографии</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">Конкурс</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link">HTML Academy</a>
-                            </li>
-                        </ul>
+                        <?php
+                        if ( has_nav_menu( 'header_menu' ) ) {
+                            wp_nav_menu(array(
+                                'theme_location'=> 'header_menu',
+                                'menu'			=> 'Header Menu',
+                                'menu_class'	=> 'nav-items',
+                                'walker'		=> new Aletheme_Nav_Walker(),
+                                'container'		=> '',
+                            ));
+                        }
+                        ?>
                     </nav>
                 </div>
             </div>

@@ -27,13 +27,48 @@
     <g id="html">
     <path fill="#d22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
     </g>
-</svg>
+</symbol>
+
+<symbol version="1.1" id="apple" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 599.925 599.925" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
 
 
+    <path fill="#FFFFFF" d="M396.75,56.5c0,0-36.125,0.875-69.25,34s-27.538,77.75-27.538,77.75s32.791,5.996,67.788-29
+	S396.75,56.5,396.75,56.5z"/>
+    <path fill="#FFFFFF" d="M303.75,196.5c-24.417-0.167-39.416-21.25-81-21.25c-37.417,0-74.926,24.141-90.875,47.5
+	C116,246,102.25,271.5,102.25,323.25s24.917,140.75,86.188,201c10.493,10.318,24.383,18.074,40.229,18.554
+	c28.5,0.863,46-20.471,82-20.471S357.5,542.804,390,542.804c14.779,0,31.633-6.731,48-24.137
+	c21-22.333,47.059-64.868,60.333-105.667c0,0-66.471-25.671-65.667-99.667c0.667-61.333,52.75-91.5,52.75-91.5
+	s-30.417-48.5-95.083-48.5C345.667,173.667,325.666,196.65,303.75,196.5z"/>
 
+</symbol>
 
+<symbol version="1.1" id="android" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="-147 -70 294 345" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
+    <g fill="#a4c639">
+        <use stroke-width="14.4" xlink:href="#b" stroke="#FFF"/>
+        <use xlink:href="#a" transform="scale(-1,1)"/>
+        <g id="a" stroke="#FFF" stroke-width="7.2">
+            <rect rx="6.5" transform="rotate(29)" height="86" width="13" y="-86" x="14"/>
+            <rect id="c" rx="24" height="133" width="48" y="41" x="-143"/>
+            <use y="97" x="85" xlink:href="#c"/>
+        </g>
+        <g id="b">
+            <ellipse cy="41" rx="91" ry="84"/>
+            <rect rx="22" height="182" width="182" y="20" x="-91"/>
+        </g>
+    </g>
+    <g stroke="#FFF" stroke-width="7.2" fill="#FFF">
+        <path d="m-95 44.5h190"/><circle cx="-42" r="4"/><circle cx="42" r="4"/>
+    </g>
 
+</symbol>
 
+<symbol version="1.1" id="windows" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  viewBox="0 0 88 88" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve">
 
+    <path style="fill:#f8682c;" d="m0,12.402,35.687-4.8602,0.0156,34.423-35.67,0.20313z"/>
+    <path style="fill:#91c300;" d="m39.996,6.9059,47.318-6.906,0,41.527-47.318,0.37565z"/>
+    <path style="fill:#00b4f1;" d="m35.67,45.931,0.0277,34.453-35.67-4.9041-0.002-29.78z"/>
+    <path style="fill:#ffc300;" d="m87.326,46.255-0.0111,41.34-47.318-6.6784-0.0663-34.739z"/>
+
+</symbol>
 
 </svg>

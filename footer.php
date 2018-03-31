@@ -7,25 +7,25 @@
                 </div>
                 <div class="social">
                     <div class="social-block">
-                        <a class="tw">
+                        <?php if(ale_get_option('twi')){ ?><a  href="<?php echo ale_get_option('twi') ?>" class="tw">
                             <svg shape-rendering="geometricPrecision" class="social-svg">
                                 <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/img/sprite-social.svg' ) : '' ; ?>#twitter">"></use>
                             </svg>
-                        </a>
+                        </a><?php } ?>
                     </div>
                     <div class="social-block">
-                        <a class="fb">
+                        <?php if(ale_get_option('fb')){ ?><a href="<?php echo ale_get_option('fb') ?>" class="fb">
                             <svg shape-rendering="geometricPrecision" class="social-svg">
                                 <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/img/sprite-social.svg' ) : '' ; ?>#facebook">"></use>
                             </svg>
-                        </a>
+                        </a><?php } ?>
                     </div>
                     <div class="social-block">
-                        <a class="youtube">
+                        <?php if(ale_get_option('yt')){ ?><a href="<?php echo ale_get_option('yt') ?>" class="youtube">
                             <svg shape-rendering="geometricPrecision" class="social-svg">
                                 <use xlink:href="<?php echo is_customize_preview() ? esc_url( get_template_directory_uri() . '/img/sprite-social.svg' ) : '' ; ?>#youtube">"></use>
                             </svg>
-                        </a>
+                        </a><?php } ?>
                     </div>
                 </div>
                 <div class="developer">

@@ -43,6 +43,12 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "upload");
 
+    $options[] = array( "name" => "Mobile Logo",
+                        "desc" => "Upload or put the site logo link",
+                        "id" => "ale_moblogo",
+                        "std" => "",
+                        "type" => "upload");
+
     $options[] = array( "name" => "Insert The Slider Slug",
                         "desc" => "Get the slug on the Sliders Setting Page.",
                         "id" => "ale_homesliderslug",
@@ -198,11 +204,6 @@ function aletheme_get_options() {
 						"id" => "ale_fb",
 						"std" => "",
 						"type" => "text");
-    $options[] = array( "name" => "Instagram",
-                        "desc" => "Your instagram profile URL.",
-                        "id" => "ale_insta",
-                        "std" => "",
-                        "type" => "text");
 
     $options[] = array( "name" => "Youtube",
                         "desc" => "Your Youtube link",

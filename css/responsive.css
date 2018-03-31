@@ -1,19 +1,12 @@
 @media (min-width: 660px) {
   .wrapper {
-    width:87.5%;
+    width: 87.5%;
     margin: 0 auto;
   }
   /*
   Header Styles
   */
-
   .header {
     min-width: 320px;
   }
-
 }
-
-@media (max-width: 660px) {
-
-}
-
