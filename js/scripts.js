@@ -3,6 +3,26 @@ jQuery(function($) {
 
     // Custom jQuery Code Here
 
+    //nav
+
+    $(".nav").removeClass('main-nav--nojs');
+
+    $('.nav-toggle').on('click', function () {
+        if($(".nav").hasClass ('main-nav--closed')) {
+            $(".nav").removeClass('main-nav--closed');
+            $(".nav").addClass("main-nav--opened");
+            $('.header-top').addClass("mob-bg");
+            $('.logo-header').addClass("logo-header__mob");
+
+        } else {
+            $(".nav").removeClass('main-nav--opened');
+            $(".nav").addClass('main-nav--closed');
+            $('.header-top').removeClass("mob-bg");
+            $('.logo-header').removeClass("logo-header__mob");
+        }
+
+
+    });
 
 
     //Parallax

@@ -49,6 +49,24 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "upload");
 
+    $options[] = array( "name" => "Tablet Logo",
+                        "desc" => "Upload or put the site logo link",
+                        "id" => "ale_tabletlogo",
+                        "std" => "",
+                        "type" => "upload");
+
+    $options[] = array( "name" => "Tablet Logo Footer",
+                        "desc" => "Upload or put the site logo link",
+                        "id" => "ale_tabletlogofooter",
+                        "std" => "",
+                         "type" => "upload");
+
+    $options[] = array( "name" => "Slide",
+                        "desc" => "Upload or put the site logo link",
+                        "id" => "ale_iphone",
+                        "std" => "",
+                        "type" => "upload");
+
     $options[] = array( "name" => "Insert The Slider Slug",
                         "desc" => "Get the slug on the Sliders Setting Page.",
                         "id" => "ale_homesliderslug",

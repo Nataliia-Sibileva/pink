@@ -3,7 +3,10 @@
         <div class="wrapper" >
             <div class="footer-top">
                 <div class="logo-footer">
-                    <img src="<?php echo ale_get_option('footerlogo'); ?>"/>
+                    <picture>
+                        <source srcset="<?php echo ale_get_option('tabletlogofooter'); ?>" media="(max-width: 960px)">
+                        <img src="<?php echo ale_get_option('footerlogo'); ?>"/>
+                    </picture>
                 </div>
                 <div class="social">
                     <div class="social-block">

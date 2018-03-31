@@ -24,14 +24,7 @@ get_header(); ?>
             <p class="slide-p">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
         <div class="slide-image">
-            <?php $slider = ale_sliders_get_slider(ale_get_option('homesliderslug'));  ?>
-            <?php if($slider):?>
-                <?php foreach ($slider['slides'] as $slide) : ?>
-                            <?php if ($slide['image']) : ?>
-                                <img src="<?php echo $slide['image'] ?>" alt="<?php echo $slide['title']; ?>" />
-                            <?php endif; ?>
-                <?php endforeach; ?>
-            <?php endif;?>
+            <img src="<?php echo ale_get_option('iphone'); ?>"/>
         </div>
     </div>
 </section>

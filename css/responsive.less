@@ -1,4 +1,6 @@
-@media (min-width: 660px) {
+@tabletonly: 660px;
+
+@media (max-width: 960px) {
   .wrapper {
     width:87.5%;
     margin: 0 auto;
@@ -6,14 +8,92 @@
   /*
   Header Styles
   */
-
-  .header {
-    min-width: 320px;
+  .mob-bg {
+    background-color: #283645;
+    height: 365px;
+  }
+  .logo-header__mob {
+    padding-top: 27px;
+  }
+  .main-nav__wrapper {
+    background-color: #283645;
+  }
+  .nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 100;
   }
 
+  .main-nav--closed > .nav-toggle {
+    background-image: url("img/burger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .main-nav--opened > .nav-toggle {
+    background-image: url("img/menu-cross.png");
+    background-repeat: no-repeat;
+    top: 40px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+  .nav-items__block {
+    display: block;
+  }
+
+  .main-nav--opened {
+    display: block;
+    width: 100%;
+  }
+  .main-nav--opened  .nav-items {
+    display: block;
+    margin-top: 40px;
+  }
+  .main-nav--opened .menu-item {
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-nav--nojs .nav-toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__wrapper {
+    background-color: white;
+  }
+
+  .main-nav--noj .menu-item {
+    display: block;
+  }
+  .main-nav--closed .menu-item {
+    display: none;
+  }
+
+  .main-nav--nojs .nav-toggle {
+    display: none;
+  }
+  .main-nav--nojs .nav-toggle {
+    position: absolute;
+    background-color: white;
+  }
+  .main-nav--noj .menu-item {
+    display: block;
+  }
 }
 
 @media (max-width: 660px) {
+
+
+}
+
+@media (max-width: @tabletonly){
 
 }
 

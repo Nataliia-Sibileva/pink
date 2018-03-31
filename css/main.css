@@ -3,6 +3,7 @@
   width: 80%;
   max-width: 960px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 /*
 Header Styles
@@ -21,13 +22,14 @@ Header Styles
   justify-content: space-between;
   align-items: center;
   height: 112px;
+  position: relative;
 }
 .logo-header {
   width: 17%;
   padding-left: 10px;
 }
-nav {
-  widows: 83%;
+.nav-toggle {
+  display: none;
 }
 .nav-items {
   display: flex;
@@ -125,6 +127,7 @@ footer {
 }
 .slide {
   display: flex;
+  flex-wrap: nowrap;
 }
 .slide-text {
   width: 380px;

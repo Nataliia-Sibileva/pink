@@ -21,21 +21,25 @@
                     <div class="logo-header">
                         <picture>
                             <source srcset="<?php echo ale_get_option('moblogo'); ?>" media="(max-width: 660px)">
+                            <source srcset="<?php echo ale_get_option('tabletlogo'); ?>" media="(max-width: 960px)">
                             <img src="<?php echo ale_get_option('sitelogo'); ?>"/>
                         </picture>
                     </div>
-                    <nav class="nav">
-                        <?php
-                        if ( has_nav_menu( 'header_menu' ) ) {
-                            wp_nav_menu(array(
-                                'theme_location'=> 'header_menu',
-                                'menu'			=> 'Header Menu',
-                                'menu_class'	=> 'nav-items',
-                                'walker'		=> new Aletheme_Nav_Walker(),
-                                'container'		=> '',
-                            ));
-                        }
-                        ?>
+                    <nav class="nav main-nav--closed main-nav--nojs">
+                        <button class="nav-toggle" type="button"></button>
+                        <div class="main-nav__wrapper">
+                            <?php
+                            if ( has_nav_menu( 'header_menu' ) ) {
+                                wp_nav_menu(array(
+                                    'theme_location'=> 'header_menu',
+                                    'menu'			=> 'Header Menu',
+                                    'menu_class'	=> 'nav-items',
+                                    'walker'		=> new Aletheme_Nav_Walker(),
+                                    'container'		=> '',
+                                ));
+                            }
+                            ?>
+                        </div>
                     </nav>
                 </div>
             </div>
