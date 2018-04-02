@@ -591,6 +591,9 @@ html[xmlns] .slides {
   height: 1%;
 }
 /* Your Custom code here */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 .wrapper {
   width: 80%;
   max-width: 960px;
@@ -972,4 +975,18 @@ footer {
   .social-block {
     margin: 0 10px;
   }
+}
+.Фотографии {
+  font-size: 5.237px;
+  font-family: "OpenSans";
+  color: #ffffff;
+  line-height: 1;
+  text-align: left;
+  -moz-transform: matrix(3.43688693, 0, 0, 3.43688693, 0, 0);
+  -webkit-transform: matrix(3.43688693, 0, 0, 3.43688693, 0, 0);
+  -ms-transform: matrix(3.43688693, 0, 0, 3.43688693, 0, 0);
+  position: absolute;
+  left: 640.336px;
+  top: 58.353px;
+  z-index: 117;
 }
