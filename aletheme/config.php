@@ -67,6 +67,24 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "upload");
 
+    $options[] = array( "name" => "Img Grey",
+                        "desc" => "Upload or put the img",
+                        "id" => "ale_mobgrey",
+                        "std" => "",
+                        "type" => "upload");
+
+    $options[] = array( "name" => "Img Pink",
+                        "desc" => "Upload or put the img",
+                        "id" => "ale_mobpink",
+                        "std" => "",
+                        "type" => "upload");
+
+    $options[] = array( "name" => "Img Smile",
+                        "desc" => "Upload or put the img",
+                        "id" => "ale_mobsmile",
+                        "std" => "",
+                        "type" => "upload");
+
     $options[] = array( "name" => "Insert The Slider Slug",
                         "desc" => "Get the slug on the Sliders Setting Page.",
                         "id" => "ale_homesliderslug",
