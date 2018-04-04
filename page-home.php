@@ -78,5 +78,34 @@ get_header(); ?>
 
 </section>
 
+
+<section class="slide-reviews">
+    <div class="wrapper">
+        <div class="slide-rs">
+            <ul class="slides">
+            <?php $slider = ale_sliders_get_slider(ale_get_option('slidersrw'));  ?>
+            <?php if($slider):?>
+                <?php foreach ($slider['slides'] as $slide) : ?>
+                    <li>
+                        <figure>
+                            <?php if ($slide['image']) : ?>
+                                <img src="<?php echo $slide['image'] ?>" alt="<?php echo $slide['title']; ?>" />
+                            <?php endif; ?>
+                            <?php if($slide['title'] or $slide['description'] or $slide['html']){ ?>
+                                <div class="sliderw-text">
+                                    <?php if($slide['title']){ echo '<p class="reviews-autor">'.$slide['title'].'</p>'; } ?><br />
+                                    <?php if($slide['html']){ echo '<p class="reviews-years">'.$slide['html'].'</p>'; } ?><br />
+                                    <?php if($slide['description']){ echo '<p class="reviews-text">'.$slide['description'].'</p>'; } ?><br />
+                                </div>
+                            <?php } ?>
+                        </figure>
+                    </li>
+                <?php endforeach; ?>
+            <?php endif;?>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <?php get_footer();
 

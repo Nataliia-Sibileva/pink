@@ -87,7 +87,7 @@ function aletheme_get_options() {
 
     $options[] = array( "name" => "Insert The Slider Slug",
                         "desc" => "Get the slug on the Sliders Setting Page.",
-                        "id" => "ale_homesliderslug",
+                        "id" => "ale_slidersrw",
                         "std" => "",
                         "type" => "text",
     );

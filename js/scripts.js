@@ -3,6 +3,7 @@ jQuery(function($) {
 
     // Custom jQuery Code Here
 
+
     //nav
 
     $(".nav").removeClass('main-nav--nojs');
@@ -23,6 +24,8 @@ jQuery(function($) {
 
 
     });
+
+
 
 
     //Parallax
@@ -52,6 +55,8 @@ jQuery(function($) {
     }
 
 
+
+
     //People Slider
     $('.peoples_list').slick({
         infinite: true,
@@ -71,13 +76,17 @@ jQuery(function($) {
         controlNav: false
     });
 
-    $('.homeslider').flexslider({
+    // Slide reviews //
+
+    $('.slide-rs').flexslider({
         animation:'slide',
         //smoothHeight:true,
-        prevText:"<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i>",
-        nextText: "<i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>",
-        controlNav: false
+        prevText:"<div class=\"fa fa-angle-left\"></div>",
+        nextText: "<div class=\"fa fa-angle-right\"></div>",
+        controlNav: true
     });
+
+
 
 
     $('.homeslider .flex-viewport').css('overflow','visible');

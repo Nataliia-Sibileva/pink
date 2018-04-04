@@ -183,6 +183,37 @@
   .effect-text a {
     font-size: 14px;
   }
+  .slide-rs {
+    min-height: 280px;
+  }
+  .slide-rs:before {
+    content: url("");
+    padding-top: 0;
+  }
+  .flex-direction-nav {
+    display: none;
+  }
+  .flex-control-nav {
+    display: block;
+    padding-top: 40px;
+  }
+  .flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+  }
+  .flex-control-nav li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #bec2c7;
+    border-radius: 20px;
+    text-indent: -9999px;
+  }
+  .flex-control-nav li .flex-active {
+    background: #FFFFFF;
+    border: 3px solid #283645;
+  }
 }
 @media (max-width: 660px) {
   .header-top,
@@ -303,5 +334,12 @@
   .info-main__flex {
     min-height: 790px;
     align-content: flex-end;
+  }
+  .reviews-text {
+    order: 2 ;
+    padding-top: 20px;
+  }
+  .reviews-years {
+    display: none;
   }
 }

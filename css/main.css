@@ -256,6 +256,67 @@ footer {
   font-size: 18px;
   text-decoration: underline;
 }
+.slide-rs {
+  min-height: 418px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.slide-rs:before {
+  content: url("img/quotes.png");
+  padding-top: 60px;
+}
+.flex-direction-nav {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+.flex-direction-nav li {
+  position: absolute;
+}
+.flex-direction-nav li:nth-child(2) {
+  right: 0;
+}
+.flex-control-nav {
+  display: none;
+}
+.fa-angle-left {
+  width: 22px;
+  height: 41px;
+  background-image: url("img/prev.png");
+}
+.fa-angle-right {
+  width: 22px;
+  height: 41px;
+  background-image: url("img/next.png");
+}
+.sliderw-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.reviews-autor {
+  order: 2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 30px;
+}
+.reviews-years {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.reviews-text {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 50px;
+}
 /* Single Gallery Page */
 /* Styles for Cooments */
 /* Add Comment Form */
